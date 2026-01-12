@@ -1,0 +1,117 @@
+# ===================================
+# Python & Django Core
+# ===================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# ===================================
+# Environment & Secrets
+# ===================================
+.env
+.env.*
+*.env
+.envrc
+secrets.json
+
+# ===================================
+# Virtual Environments
+# ===================================
+venv/
+ENV/
+env/
+.venv/
+.virtualenv/
+
+# ===================================
+# IDE & Editor Files
+# ===================================
+.idea/
+.vscode/
+*.swp
+*.swo
+*.bak
+*.tmp
+*.orig
+
+# ===================================
+# OS Artifacts
+# ===================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===================================
+# Django Static & Media
+# ===================================
+staticfiles/
+media/
+static_root/
+media_root/
+
+# ===================================
+# Migrations (Optional – see note below)
+# ===================================
+**/migrations/
+!**/migrations/__init__.py
+
+# ===================================
+# Testing & Coverage
+# ===================================
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+nosetests.xml
+test-results/
+
+# ===================================
+# Build & Packaging
+# ===================================
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ===================================
+# Caches & Temp
+# ===================================
+.cache/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ===================================
+# Celery / Redis
+# ===================================
+celerybeat-schedule
+celerybeat.pid
+
+# ===================================
+# Logs & Runtime
+# ===================================
+*.pid
+*.out
+*.err
+
+# ===================================
+# Docker (Optional)
+# ===================================
+*.tar
+docker-data/
+
+# ===================================
+# Node / Frontend (if used)
+# ===================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
