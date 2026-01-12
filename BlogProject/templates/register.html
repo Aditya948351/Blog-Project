@@ -8,13 +8,12 @@
 </head>
 
 <body>
-    <h1>Update Author</h1>
+    <h1>Register Page</h1>
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">Update Author</button>
+        <button type="submit">Register</button>
     </form>
-    <a href="{% url 'author_home' %}">Back to Author List</a>
 </body>
 
 </html>

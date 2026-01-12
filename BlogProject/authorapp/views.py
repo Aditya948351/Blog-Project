@@ -15,10 +15,10 @@ def add_author(request):
         form = AuthorForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('author-home')
+            return redirect('author_home')
     else:
         form = AuthorForm()
-    return render(request, 'authorapp/addauthor.html', {'form': form})
+    return render(request, 'authorapp/add_author.html', {'form': form})
     
 
 def update_author(request, author_id):
@@ -27,14 +27,14 @@ def update_author(request, author_id):
         form = AuthorForm(request.POST, instance=author)
         if form.is_valid():
             form.save()
-            return redirect('author-home')
+            return redirect('author_home')
     else:
         form = AuthorForm(instance=author)
-    return render(request, 'authorapp/updateauthor.html', {'form': form})
+    return render(request, 'authorapp/update_author.html', {'form': form})
 
 
 
 def delete_author(request, author_id):
     author = Author.objects.get(id=author_id)
     author.delete()
-    return redirect('author-home')
+    return redirect('author_home')

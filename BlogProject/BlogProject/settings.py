@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'blogapp',
     'authorapp',
     'categoryapp',
+    'profileapp',
 ]
 
 MIDDLEWARE = [
@@ -85,6 +86,8 @@ DATABASES = {
         'PORT': '3306',
     }
 }
+
+
 
 
 # Password validation

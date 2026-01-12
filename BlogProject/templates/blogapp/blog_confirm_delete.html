@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Delete Blog</title>
 </head>
 
 <body>
-    <h1>Update Author</h1>
+    <h1>Delete Blog</h1>
+    <p>Are you sure you want to delete "{{ blog.title }}"?</p>
     <form method="post">
         {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Update Author</button>
+        <button type="submit">Confirm Delete</button>
     </form>
-    <a href="{% url 'author_home' %}">Back to Author List</a>
+    <a href="{% url 'blog_home' %}">Cancel</a>
 </body>
 
 </html>

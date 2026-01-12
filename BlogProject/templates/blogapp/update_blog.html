@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Update Blog</title>
 </head>
 
 <body>
-    <h1>Update Author</h1>
+    <h1>Update Blog</h1>
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">Update Author</button>
+        <button type="submit">Update Blog</button>
     </form>
-    <a href="{% url 'author_home' %}">Back to Author List</a>
+    <a href="{% url 'blog_home' %}">Back to Blog List</a>
 </body>
 
 </html>

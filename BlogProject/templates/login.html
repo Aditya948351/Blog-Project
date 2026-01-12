@@ -8,13 +8,14 @@
 </head>
 
 <body>
-    <h1>Update Author</h1>
+    <h1>Login Page</h1>
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">Update Author</button>
+        <button type="submit">Login</button>
     </form>
-    <a href="{% url 'author_home' %}">Back to Author List</a>
+
+    <p style="color: red;"> {{error}}</p>
 </body>
 
 </html>

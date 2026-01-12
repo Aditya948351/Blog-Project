@@ -16,10 +16,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from . import views
 
 urlpatterns = [
+    # app level configuration
     path('admin/', admin.site.urls),
     path('author/', include('authorapp.urls')),
     path('category/', include('categoryapp.urls')),
     path('blog/', include('blogapp.urls')),
+    path('profile/', include('profileapp.urls')),
+
+    # project level configuration
+    path('', views.homepage, name='homepage'),
+    path('login/', views.login_view, name='login'),
+    path('logout/', views.logout_view, name='logout'),
+    path('register/', views.register_view, name='register'),
 ]
