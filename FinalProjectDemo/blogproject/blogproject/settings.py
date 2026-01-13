@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'geminichatbot',
 ]
 
-OPENROUTER_API_KEY = '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'
+OPENROUTER_API_KEY = '
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
