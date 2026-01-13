@@ -27,6 +27,7 @@ urlpatterns = [
     path('category/', include('categoryapp.urls')),
     path('blog/', include('blogapp.urls')),
     path('profile/', include('proifeapp.urls')),
+    path('geminichatbot/', include('geminichatbot.urls')),
     
     # project URL configurations
     path('', views.homepage, name='homepage'),
